@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button>
+                <img src="weather-app-img/images/search.png">
+            </button>
+            <select id="unitSelector">
+                <option value="C" selected>Celsius</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+        </div>
+
+
+        <div class="weather">
+            <img src="weather-app-img/images/rain.png" class="weather-icon">
+            <div class = "all">
+                <div class="cel">
+                    <h1 class="temp" id = "tempC">0°C</h1>
+                    <p class="feel" id = "feelC">Feels like 0°C</p>
+                </div>
+                <div class="fahre" style="display: none;">
+                    <h1 class="temp" id = "tempF">0°F</h1>
+                    <p class="feel" id = "feelF">Feels like 0°F</p>
+                </div>
+            </div>  
+            
+            <h2 class="city"></h2>
+
+            <div class="details">
+
+                <div class="col">
+                    <img src="weather-app-img/images/humidity.png">
+
+                    <div>
+                        <p class="humidity">0%</p>
+                        <p>Humidity</p>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <img src="weather-app-img/images/wind.png">
+                    
+                    <div>
+                        <p class="wind">0 km/h</p>
+                        <p>wind Speed</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="weather.js"/>
+</body>
+</html>

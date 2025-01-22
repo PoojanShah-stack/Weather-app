@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    /* background: linear-gradient(135deg, #a8edea, #fed6e3); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    border-radius: 10px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: auto;
+    /* width: 350px; */
+}
+
+.search input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search button img {
+    margin-top: 5px;
+    margin-left: -50px;
+    width: auto;
+    /* width: 24px; */
+    height: 24px;
+}
+
+.search select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    width: auto;
+    padding: 7px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.all {
+    margin-top:-20px;
+    align-items: center;
+}
+
+.cel, .fahre {
+    width: 100%;
+}
+
+.temp {
+    font-size: 80px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.feel {
+    
+    /* margin: 5px 0 15px; */
+    margin-top: -15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.city {
+   
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.col img {
+    width: 30px;
+    height: 30px;
+}
+
+.col p {
+    margin: 0;
+    font-size: 0.9rem;
+    
+}
+
+.col p:first-child {
+    font-weight: 500;
+    font-size: 1.1rem;
+} 
